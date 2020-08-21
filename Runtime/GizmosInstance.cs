@@ -28,7 +28,7 @@ namespace Popcron
     [AddComponentMenu("")]
     public class GizmosInstance : MonoBehaviour
     {
-        [SerializeField] private List<Camera> whitelistedCams;
+        [SerializeField] private List<Camera> whitelistedCams = new List<Camera>();
 
         private const int DefaultQueueSize = 4096;
 
@@ -211,6 +211,11 @@ namespace Popcron
             else
             {
                 RenderPipelineManager.endCameraRendering += OnRendered;
+            }
+
+            foreach (var cam in whitelistedCams)
+            {
+                
             }
         }
 
