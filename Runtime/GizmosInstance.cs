@@ -28,6 +28,8 @@ namespace Popcron
     [AddComponentMenu("")]
     public class GizmosInstance : MonoBehaviour
     {
+        [SerializeField] private List<Camera> whitelistedCams;
+
         private const int DefaultQueueSize = 4096;
 
         private static GizmosInstance instance;
