@@ -17,7 +17,7 @@ public class Updater : Editor
     }
 
     private const string PackageName = "com.popcron.gizmos";
-    private const string PackageURL = "https://raw.githubusercontent.com/popcron/gizmos/master/package.json";
+    private const string PackageURL = "https://raw.githubusercontent.com/blaykelarue/gizmos/master/package.json";
     private const string CanUpdateKey = "Popcron.Gizmos.CanUpdate";
     private const string CheckForUpdateText = "Popcron/Gizmos/Check for updates";
     private const string UpdateText = "Popcron/Gizmos/Update";
